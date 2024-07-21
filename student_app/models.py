@@ -14,8 +14,8 @@ class Student(models.Model): #create model class
     #create locker number id
     locker_number = models.IntegerField()
 
-    #create locker combo
+    #create locker combo ### Link locker combination to locker number
     locker_combo = models.CharFiel(length=20)
 
-    #create if student_good boolean
+    #create if student_good boolean ### Need to define what is good studen
     good_student = models.BooleanField(default=True)
