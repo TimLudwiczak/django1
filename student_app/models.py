@@ -17,5 +17,11 @@ class Student(models.Model): #create model class
     #create locker combo ### Link locker combination to locker number
     locker_combo = models.CharFiel(length=20)
 
+    ###Found this as possible option to ensure XX-XX-XX format for combination
+    #    locker_combination_validator = RegexValidator(
+    #     regex=r'^\d{2}-\d{2}-\d{2}$',
+    #     message='Locker combination must be in the format xx-xx-xx, where x is an integer.'
+    # )
+
     #create if student_good boolean ### Need to define what is good studen
     good_student = models.BooleanField(default=True)
