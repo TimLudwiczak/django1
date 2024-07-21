@@ -19,7 +19,7 @@ class Student(models.Model): #create model class
 
     ###Found this as possible option to ensure XX-XX-XX format for combination
     #    locker_combination_validator = RegexValidator(
-    #     regex=r'^\d{2}-\d{2}-\d{2}$',
+    #     regex=r'^\d{2}-\d{2}-\d{2}$', ###Not sure if r' (raw string) is absolutely needed
     #     message='Locker combination must be in the format xx-xx-xx, where x is an integer.'
     # )
 
